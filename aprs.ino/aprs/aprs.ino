@@ -108,8 +108,8 @@ void loop() {
       delay(1000);
       //Send packet APRS - Time UTC - Position - Comment - Altitude
       //http://www.aprs.org/APRS-docs/PROTOCOL.TXT
-      client.println("CALL>APRS,TCPIP*:/" + hour + minute + second + "z0000.00N/00000.00E-message ");
-      Serial.println("CALL>APRS,TCPIP*:/" + hour + minute + second + "z0000.00N/00000.00E-message");
+      client.println("CALL>APRS,TCPIP*:/" + hour + minute + second + "z0000.00N/00000.00E-message "); // Instert data for CALL and GPS position
+      Serial.println("CALL>APRS,TCPIP*:/" + hour + minute + second + "z0000.00N/00000.00E-message"); // Instert data for CALL and GPS position
       delay(1000);
       count = 0;
     }
